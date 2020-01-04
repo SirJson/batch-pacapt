@@ -151,7 +151,7 @@ exit /b 0
 
 :: -V, -h/--help and -P will not be displayed here
 :display_available_operations
-set availableOperations=S Ss Su Suy U Q R
+set availableOperations=S Ss Su Suy U Q R Rs Qs
 
 if %chocolateyFound%==false (
   set availableOperations=
@@ -189,6 +189,7 @@ goto :eof
 
 :handle_remove_operation
 if "%operation%"=="-R" ( goto handle_operation_R )
+if "%operation%"=="-Rs" ( goto handle_operation_R )
 goto :eof
 
 :handle_invalid_operation operation
@@ -277,8 +278,8 @@ call :handle_invalid_operation Qp
 exit /b 1
 
 :handle_operation_Qs
-call :handle_invalid_operation Qs
-exit /b 1
+choco list -la %rawParameters%
+exit /b %ERRORLEVEL%
 
 :handle_operation_R
 set parameters=
