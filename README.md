@@ -17,5 +17,5 @@ are supported and listed in the table in the next section. A short description o
 ## Implemented operations
 ```
             Q Qc Qi Ql Qm Qo Qp Qs Qu R Rn Rns Rs S Sc Scc Sccc Si Sii Sl Ss Su Suy Sw Sy U
-chocolatey  y  .  .  .  .  .  .  .  . y  .   .  . y  .   .    .  .   .  .  y  y   y  .  . y
+chocolatey  y  .  .  .  .  .  .  y  . y  .   .  . y  .   .    .  .   .  .  y  y   y  .  . y
 ```
